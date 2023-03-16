@@ -17,12 +17,10 @@ int PrintSum(int start, int end)
 {
   if (start <= 0)
   {
-    start = 1;
+  start = 1;
   }
   int sum = start;
   if (start == end) return sum;
-  {
-    return (sum + PrintSum(start + 1, end));
-  }
+  return (sum + PrintSum(start + 1, end));
 }
 Console.WriteLine(PrintSum(m, n));
